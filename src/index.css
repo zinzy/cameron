@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { 
+    height: 100vh;
+}
+
+.window {
+    height: 100vh;
+}
+iframe {
+    height: 100vh;
+    width: 100%;
+}
+
+.react-tabs__tab-list {
+    @apply bg-white border text-sm fixed break-all w-60 top-8 left-8 opacity-90 p-5;
+}
+
+
+/*==========================
+Sidebar navigation
+========================*/
+
+  .menu-nav {
+    @apply text-sm rounded p-5 fixed bg-white shadow-xl left-7 top-24 w-0 max-w-60 bottom-7;
+    /* list-style: none; */
+    /* position: absolute; */
+    /* background: #fff; */
+    /* left: 0; */
+    /* width: 0; */
+    overflow: hidden;
+    /* max-width: 290px; */
+    z-index: 9;
+    transform: translateX(-100px);
+    /* transition: transform ease-in-out 0.2s; */
+    /* transition: width ease 0.2s; */
+  }
+  .menu-nav.show-menu {
+    @apply w-full max-h-full overflow-y-auto ;
+    /* width: 100%; */
+    transform: translateX(0px);
+  }
+
+  .menu-trigger {
+    @apply w-14 h-14 bg-white fixed left-7 top-7 shadow-xl rounded;
+  }
+
+
+
+
+  .text-secondary {
+    @apply text-gray-600;
+  }
